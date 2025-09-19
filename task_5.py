@@ -8,7 +8,8 @@ class TestCase:
         self.steps[step_number] = step_text
 
     def delete_step(self, step_number): #Удаление шага
-        self.steps.pop(step_number)
+        if step_number in self.steps:
+            del self.steps[step_number]
 
     def set_result(self, result): #Записываем ожидаемый результат
         self.result = result

@@ -2,7 +2,6 @@ class Tester:
 
     def __init__(salf, name): #Не было salf во всей функции
         salf.name = name
-        salf.deadline = True
 
     def work_hard(self, deadline): #Исправил переменную deadline
         if deadline: #Лишний self
